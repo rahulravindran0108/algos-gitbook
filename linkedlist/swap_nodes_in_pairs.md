@@ -9,7 +9,7 @@ Your algorithm should use only constant space. You may not modify the values in 
 
 ### Solution
 
-```{python}
+```python
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
