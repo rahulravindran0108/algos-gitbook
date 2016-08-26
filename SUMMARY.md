@@ -11,6 +11,8 @@
    * [Palindrome Linked List](linkedlist/palindrome_linked_list.md)
    * [Reverse Linked List](linkedlist/reverse_linked_list.md)
    * [Reverse Linked List 2](linkedlist/reverse_linked_list_2.md)
+   * [Partition List](linkedlist/partition_list.md)
+   * [Convert Sorted List to Binary Search Tree](linkedlist/sorted_list_to_bst.md)
 * [String](strings.md)
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
 * [Math](math.md)
