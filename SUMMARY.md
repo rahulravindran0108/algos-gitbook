@@ -15,6 +15,7 @@
    * [Convert Sorted List to Binary Search Tree](linkedlist/sorted_list_to_bst.md)
    * [Reorder List](linkedlist/reorder_list.md)
    * [Copy List With Random Pointers](linkedlist/copy_list_with_random_pointers.md)
+   * [Reverse Nodes in K Groups](linkedlist/reverse_in_k_groups.md)
 * [String](strings.md)
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
 * [Math](math.md)
