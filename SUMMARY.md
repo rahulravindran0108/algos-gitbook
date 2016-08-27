@@ -18,6 +18,8 @@
    * [Reverse Nodes in K Groups](linkedlist/reverse_in_k_groups.md)
 * [String](strings.md)
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
+   * [Longest Abolute File Path](string/longest_absolute_file_path.md)
+   * [First Unique Character in String](string/first_unique_character_in_string.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
 * [Array](array.md)
