@@ -30,5 +30,8 @@
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
   * [Inorder Traversal](trees/inorder_traversal.md)
+  * [Maximum Depth of Binary Tree](trees/maximum_depth_binary_tree.md)
+  * [Lowest Common Ancestor for Binary Search Tree](trees/lowest_common_ancestor.md)
+  * [Symmetric Trees](trees/symmetric_trees.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
