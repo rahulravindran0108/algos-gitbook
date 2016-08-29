@@ -35,5 +35,8 @@
   * [Lowest Common Ancestor for Binary Search Tree](trees/lowest_common_ancestor.md)
   * [Lowest Common Ancestor of Binary Tree](trees/lowest_common_ancestor_binary_tree.md)
   * [Symmetric Trees](trees/symmetric_trees.md)
+  * [Same Tree](trees/same_tree.md)
+  * [Binary Tree Path](trees/binary_tree_path.md)
+  * [Binary Tree Level Order Traversal](trees/binary_tree_level_order_traversal.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
