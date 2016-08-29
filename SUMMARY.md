@@ -38,5 +38,7 @@
   * [Same Tree](trees/same_tree.md)
   * [Binary Tree Path](trees/binary_tree_path.md)
   * [Binary Tree Level Order Traversal](trees/binary_tree_level_order_traversal.md)
+  * [Balanced Binary Tree](trees/balanced_binary_tree.md)
+  * [Minimum Depth of Binary Tree](trees/min_depth_binary_tree.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
