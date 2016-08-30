@@ -43,5 +43,6 @@
   * [Recover Binary Search Tree](trees/recover_binary_search_tree.md)
   * [Binary Tree Zigzag Traversal](trees/binary_tree_zigzag_traversal.md)
   * [Convert Sorted Array to Binary Tree](trees/convert_sorted_array_to_binary_tree.md)
+  * [Binary Tree Level Order Traversal 2](trees/binary_tree_level_order_traversal_2.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
