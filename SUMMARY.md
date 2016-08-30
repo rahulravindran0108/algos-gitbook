@@ -41,5 +41,7 @@
   * [Balanced Binary Tree](trees/balanced_binary_tree.md)
   * [Minimum Depth of Binary Tree](trees/min_depth_binary_tree.md)
   * [Recover Binary Search Tree](trees/recover_binary_search_tree.md)
+  * [Binary Tree Zigzag Traversal](trees/binary_tree_zigzag_traversal.md)
+  * [Convert Sorted Array to Binary Tree](trees/convert_sorted_array_to_binary_tree.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
