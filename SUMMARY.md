@@ -46,5 +46,6 @@
   * [Binary Tree Level Order Traversal 2](trees/binary_tree_level_order_traversal_2.md)
   * [Flatten Binary Tree to List](trees/flatten_binary_tree_to_list.md)
   * [Sum Root to Leaf Numbers](trees/sum_root_to_leaf_numbers.md)
+  * [Path Sum 2](trees/path_sum_2.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
