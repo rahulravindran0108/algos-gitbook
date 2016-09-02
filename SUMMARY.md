@@ -50,5 +50,7 @@
   * [Binary Tree Right Side View](trees/binary_tree_right_side_view.md)
   * [Binary Search Tree Iterator](trees/bst_iterator.md)
   * [Count Complete Tree Nodes](trees/count_complete_tree_nodes.md)
+  * [Populate Next Right Pointer](trees/populate_next_right_pointer.md)
+  * [Populate Next Right Pointer 2](trees/populate_next_right_pointer_2.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
