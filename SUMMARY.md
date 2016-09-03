@@ -52,5 +52,6 @@
   * [Count Complete Tree Nodes](trees/count_complete_tree_nodes.md)
   * [Populate Next Right Pointer](trees/populate_next_right_pointer.md)
   * [Populate Next Right Pointer 2](trees/populate_next_right_pointer_2.md)
+  * [House Robber 3](trees/house_robber_3.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
