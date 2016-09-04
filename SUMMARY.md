@@ -55,5 +55,6 @@
   * [House Robber 3](trees/house_robber_3.md)
   * [Construct Binary Tree from Inorder and Post Order](trees/construct_binary_tree_from_inorder_and_post_order.md)
   * [Construct Binary Tree from Inorder and Preorder](trees/construct_binary_tree_from_preorder_and_inorder.md)
+  * [Binary Tree Maximum Path Sum](trees/maximum_path_sum.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
