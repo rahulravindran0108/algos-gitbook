@@ -36,20 +36,19 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: int
         """
-        if not matrix:
-            return 0
-        m,n = len(matrix), len(matrix[0])
-        dis = [[0 for j in xrange(n)] for i in xrange(m)]
-        return max([self.dfs(m, n, i, j, matrix, dis) for j in xrange(n) for i in range(m)])
 
-    def dfs(self, m, n, x, y, matrix, dis):
-        if dis[x][y]: return dis[x][y]
+        def dfs(i, j):
+            if not dp[i][j]:
+                val = matrix[i][j]
+                dp[i][j] = 1 + max(
+                    dfs(i - 1, j) if i and val > matrix[i - 1][j] else 0,
+                    dfs(i + 1, j) if i < M - 1 and val > matrix[i + 1][j] else 0,
+                    dfs(i, j - 1) if j and val > matrix[i][j - 1] else 0,
+                    dfs(i, j + 1) if j < N - 1 and val > matrix[i][j + 1] else 0)
+            return dp[i][j]
 
-        for dx, dy in [(1,0),(-1,0),(0,1),(0,-1)]:
-            nx, ny = x+dx, y+dy
-
-            if nx >=0 and nx <m and ny >=0 and ny <n and matrix[x][y] < matrix[nx][ny]:
-                dis[x][y] = max(dis[x][y], self.dfs( m, n, nx, ny, matrix, dis))
-        dis[x][y] += 1
-        return dis[x][y]
+        if not matrix or not matrix[0]: return 0
+        M, N = len(matrix), len(matrix[0])
+        dp = [[0] * N for i in range(M)]
+        return max(dfs(x, y) for x in range(M) for y in range(N))
 ```
