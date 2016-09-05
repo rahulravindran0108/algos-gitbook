@@ -24,6 +24,7 @@
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
+   * [Longest Increasing Path in a Matrix][math/longest_increasing_path_in_matrix.md]
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
 * [Trees](trees.md)
