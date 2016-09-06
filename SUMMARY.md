@@ -21,10 +21,13 @@
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
    * [Longest Abolute File Path](string/longest_absolute_file_path.md)
    * [First Unique Character in String](string/first_unique_character_in_string.md)
+   * [Longest Substring with At Least K Repeating Characters](string/longest_substring_with_k_repeating_characters.md )
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
    * [Longest Increasing Path in a Matrix][math/longest_increasing_path_in_matrix.md]
+   * [Move Zeros](math/move_zeros.md)
+   * [Number of Islands](math/number_of_island.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
 * [Trees](trees.md)
