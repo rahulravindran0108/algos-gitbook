@@ -29,6 +29,7 @@
    * [Longest Increasing Path in a Matrix][math/longest_increasing_path_in_matrix.md]
    * [Move Zeros](math/move_zeros.md)
    * [Number of Islands](math/number_of_island.md)
+   * [Trap Water](math/trap_water.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
 * [Trees](trees.md)
