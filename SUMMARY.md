@@ -65,3 +65,5 @@
   * [Binary Tree Maximum Path Sum](trees/maximum_path_sum.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
+* [Quora](quora.md)
+   * [Ontology](quora/ontology.md) 
