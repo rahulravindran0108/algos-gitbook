@@ -66,4 +66,5 @@
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
 * [Quora](quora.md)
-   * [Ontology](quora/ontology.md) 
+   * [Ontology](quora/ontology.md)
+   * [Labeller](quora/labeller.md)
