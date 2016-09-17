@@ -65,6 +65,8 @@
   * [Binary Tree Maximum Path Sum](trees/maximum_path_sum.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
+* [Dynamic Programming](dynamic_programming.md)
+   * [Best Time to Buy and Sell Stock](dp/best_time_to_buy_sell_stocks.md)
 * [Quora](quora.md)
    * [Ontology](quora/ontology.md)
    * [Labeller](quora/labeller.md)
