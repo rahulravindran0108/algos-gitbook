@@ -67,6 +67,7 @@
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [Best Time to Buy and Sell Stock](dp/best_time_to_buy_sell_stocks.md)
+   * [Maximum Subarray](dp/maximum_subarray.md)
 * [Quora](quora.md)
    * [Ontology](quora/ontology.md)
    * [Labeller](quora/labeller.md)
