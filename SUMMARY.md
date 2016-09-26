@@ -31,6 +31,7 @@
    * [Number of Islands](math/number_of_island.md)
    * [Trap Water](math/trap_water.md)
    * [Course Schedule](math/course_schedule.md)
+   * [Elimination Game](math/elimination_game.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
 * [Trees](trees.md)
