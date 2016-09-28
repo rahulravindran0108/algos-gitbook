@@ -23,6 +23,7 @@
    * [First Unique Character in String](string/first_unique_character_in_string.md)
    * [Longest Substring with At Least K Repeating Characters](string/longest_substring_with_k_repeating_characters.md )
    * [Decode String](string/decode_string.md)
+   * [Isomorphic String](string/isomorphic_string.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
