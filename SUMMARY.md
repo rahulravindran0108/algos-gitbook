@@ -77,6 +77,7 @@
 * [Binary Search](search.md)
    * [Search in a Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Surrounded Regions](search/surrounded_regions.md)
+   * [Count of Smaller Number after Self](search/count_smaller_numbers_after_self.md)
 * [Quora](quora.md)
    * [Ontology](quora/ontology.md)
    * [Labeller](quora/labeller.md)
