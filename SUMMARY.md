@@ -36,6 +36,7 @@
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
    * [Merge Two Sorted List in Constant Space](array/merge_two_sorted_list_in_constant_space.md)
+   * [Queue Reconstruction by Height](array/queue_reconstruction_by_height.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
