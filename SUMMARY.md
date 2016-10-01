@@ -74,6 +74,7 @@
    * [Maximum Subarray](dp/maximum_subarray.md)
    * [Best Time to Buy and Sell Stock 3](dp/best_time_to_buy_sell_stocks_3.md)
    * [Frog Jump](dp/frog_jump.md)
+   * [Longest Increasing Subsequence](dp/longest_increasing_subsequence.md)
 * [Binary Search](search.md)
    * [Search in a Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Surrounded Regions](search/surrounded_regions.md)
