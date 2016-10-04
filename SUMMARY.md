@@ -25,6 +25,7 @@
    * [Decode String](string/decode_string.md)
    * [Isomorphic String](string/isomorphic_string.md)
    * [Zigzag Conversion](string/zigzag_conversion.md)
+   * [Longest Common Prefix](string/longest_common_prefix.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
@@ -84,7 +85,7 @@
    * [Surrounded Regions](search/surrounded_regions.md)
    * [Count of Smaller Number after Self](search/count_smaller_numbers_after_self.md)
 * [Stack]
-  * [Valid Paranthesis](stack/valid_paranthesis.md)
+   * [Valid Paranthesis](stack/valid_paranthesis.md)
 * [Quora](quora.md)
    * [Ontology](quora/ontology.md)
    * [Labeller](quora/labeller.md)
