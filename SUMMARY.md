@@ -26,6 +26,7 @@
    * [Isomorphic String](string/isomorphic_string.md)
    * [Zigzag Conversion](string/zigzag_conversion.md)
    * [Longest Common Prefix](string/longest_common_prefix.md)
+   * [Length of Last Word](string/length_of_last_word.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
