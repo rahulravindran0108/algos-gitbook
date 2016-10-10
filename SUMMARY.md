@@ -29,6 +29,7 @@
    * [Length of Last Word](string/length_of_last_word.md)
    * [Ransom Note](string/ransom_note.md)
    * [Mini Parser](string/mini_parser.md)
+   * [Longest Valid Parentheses](string/longest_valid_parentheses.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)

@@ -1,7 +1,6 @@
 ## Ransom Note
 
-Given  an  arbitrary  ransom  note  string  and  another  string  containing  letters from  all  the  magazines,  write    function  that  will  return  true  if  the  ransom  note  can  be  constructed  from  the  magazines;  otherwise,  it  will  return  false.  
-
+Ransom note problem on Leetcode.
 ### Solution
 
 ```python
