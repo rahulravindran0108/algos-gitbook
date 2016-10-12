@@ -40,6 +40,7 @@
    * [Trap Water](math/trap_water.md)
    * [Course Schedule](math/course_schedule.md)
    * [Elimination Game](math/elimination_game.md)
+   * [String Reduction](math/string_reduction.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
    * [Merge Two Sorted List in Constant Space](array/merge_two_sorted_list_in_constant_space.md)
