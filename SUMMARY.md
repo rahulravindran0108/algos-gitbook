@@ -92,6 +92,8 @@
    * [Distinct Subsequence](dp/distince_subsequences.md)
    * [Minimum Path Sum](dp/minimum_path_sum.md)
    * [Dungeon Game](dp/dungeon_game.md)
+   * [Unique Paths](dp/unique_paths.md)
+   * [Unique Paths 2](dp/unique_paths_2.md)
 * [Binary Search](search.md)
    * [Search in a Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Surrounded Regions](search/surrounded_regions.md)
