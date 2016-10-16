@@ -50,6 +50,7 @@
    * [Gas Station](array/gas_station.md)
    * [Maximum Gap](array/maximum_array.md)
    * [Maximum Sliding Window](array/max_sliding_window.md)
+   * [Maximum Product of Word Length](array/maximum_product_of_word_length.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
