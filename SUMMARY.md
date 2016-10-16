@@ -49,6 +49,7 @@
    * [Jump Game](array/jump_game.md)
    * [Gas Station](array/gas_station.md)
    * [Maximum Gap](array/maximum_array.md)
+   * [Maximum Sliding Window](array/max_sliding_window.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
