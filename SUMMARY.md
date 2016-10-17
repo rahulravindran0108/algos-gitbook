@@ -100,6 +100,7 @@
    * [Largest Rectangle in Histogram](dp/largest_rectangle_in_histogram.md)
    * [Maximal Square](dp/maximum_square.md)
    * [Maximum Product Subarray](dp/maximum_product_subarray.md)
+   * [House Robber 2](dp/house_robber_2.md)
 * [Binary Search](search.md)
    * [Search in a Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Surrounded Regions](search/surrounded_regions.md)
