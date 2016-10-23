@@ -83,6 +83,8 @@
   * [Construct Binary Tree from Inorder and Preorder](trees/construct_binary_tree_from_preorder_and_inorder.md)
   * [Binary Tree Maximum Path Sum](trees/maximum_path_sum.md)
   * [Sum Left Leaves](trees/sum_left_leaves.md)
+  * [Minimum Height Trees](trees/minimum_height_trees.md)
+  * [Path Sum 3](trees/path_sum_3.md)
 * [Hackerrank](hackerrank.md)
    * [Fibonacci Modified](hackerrank/fibonacci_modified_hr.md)
    * [Maximum Subarray](hackerrank/maximum_subarray.md)
