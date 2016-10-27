@@ -44,6 +44,7 @@
    * [String Reduction](math/string_reduction.md)
    * [Longest Consecutive Subsequence](math/longest_consecutive_subsequence.md)
    * [Product of Number except Self](math/product_of_numbers_except_self.md)
+   * [Permutation](math/permutation.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
    * [Merge Two Sorted List in Constant Space](array/merge_two_sorted_list_in_constant_space.md)
