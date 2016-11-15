@@ -168,6 +168,8 @@
    * [Maximum Subarray](hackerrank/maximum_subarray.md)
    * [Gridland Metro](hackerrank/gridland_metro.md)
    * [Jesse Loves Candy](hackerrank/jesse_loves_candy.md)
+   * [Bigger is Better](hackerrank/bigger_is_better.md)
+   * [Equalize the Array](hackerrank/equalize_the_array.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [Best Time to Buy and Sell Stock](dp/best_time_to_buy_sell_stocks.md)
    * [Maximum Subarray](dp/maximum_subarray.md)
