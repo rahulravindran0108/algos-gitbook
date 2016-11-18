@@ -41,6 +41,7 @@
    * [Find All Anagrams in String](string/find_all_anagrams_in_string.md)
    * [Sort Characters by Frequency](string/sort_characters_by_frequency.md)
    * [Reverse Words in String](string/reverse_words_in_string.md)
+   * [Repeated DNA Sequence](string/repeated_dna_sequence.md)
 * [Design](design.md)
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)
