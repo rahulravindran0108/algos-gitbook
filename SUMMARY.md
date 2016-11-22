@@ -141,6 +141,7 @@
    * [Patching Array](array/patching_array.md)
    * [Search Insert Position](array/search_insert_position.md)
    * [Minimum Moves to Equal Array 2](array/minimum_moves_to_equal_array_2.md)
+   * [132 Pattern](array/132_pattern.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
