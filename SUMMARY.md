@@ -43,6 +43,7 @@
    * [Reverse Words in String](string/reverse_words_in_string.md)
    * [Repeated DNA Sequence](string/repeated_dna_sequence.md)
    * [Shortest Palindrome](string/shortest_palindrome.md)
+   * [Generate Paranthesis](string/generate_paranthesis.md)
 * [Design](design.md)
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)
