@@ -118,6 +118,7 @@
    * [Summary Ranges](math/summary_ranges.md)
    * [Find Positive Number](math/find_positive_number.md)
    * [Sort Colors](math/sort_colors.md)
+   * [Candy](math/candy.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
    * [Merge Two Sorted List in Constant Space](array/merge_two_sorted_list_in_constant_space.md)
