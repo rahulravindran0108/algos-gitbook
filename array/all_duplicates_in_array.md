@@ -33,3 +33,21 @@ class Solution(object):
                 nums[index] = - nums[index]
         return result
 ```
+
+```java
+public class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+
+        for(int i: nums) {
+            int index = Math.abs(i) - 1;
+            if(nums[index] < 0)
+                result.add(index + 1);
+            else
+                nums[index] = -nums[index];
+        }
+
+        return result;
+    }
+}
+```

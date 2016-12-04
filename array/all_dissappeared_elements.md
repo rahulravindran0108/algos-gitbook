@@ -33,3 +33,22 @@ class Solution(object):
                 result.append(i + 1)
         return result
 ```
+
+```java
+public class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+
+        for(int i: nums) {
+            int index = Math.abs(i) - 1;
+            nums[index] = nums[index] > 0 ? -nums[index] : nums[index];
+        }
+
+        for(int i=0;i < nums.length;i++) {
+            if(nums[i] > 0)
+                result.add(i+1);
+        }
+        return result;
+    }
+}
+```
