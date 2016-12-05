@@ -39,3 +39,28 @@ class Solution(object):
                 print l
         return l[0] if l[0] != float('-inf') else max(l)
 ```
+
+```java
+public class Solution {
+    public int thirdMax(int[] nums) {
+        PriorityQueue<Integer> q = new PriorityQueue<Integer>();
+        Set<Integer> set = new HashSet<>();
+
+        for(int i : nums) {
+            if(!set.contains(i)) {
+                q.offer(i);
+                set.add(i);
+                if(q.size() > 3)
+                    set.remove(q.poll());
+            }
+        }
+
+        if(q.size() < 3) {
+            while(q.size() > 1)
+                q.poll();
+        }
+
+        return q.peek();
+    }
+}
+```
