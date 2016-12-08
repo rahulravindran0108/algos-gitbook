@@ -191,6 +191,7 @@
    * [Bigger is Better](hackerrank/bigger_is_better.md)
    * [Equalize the Array](hackerrank/equalize_the_array.md)
    * [Got 1](hackerrank/got_1.md)
+   * [Best Divisor](hackerrank/best_divisor.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [Best Time to Buy and Sell Stock](dp/best_time_to_buy_sell_stocks.md)
    * [Maximum Subarray](dp/maximum_subarray.md)
