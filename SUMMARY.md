@@ -149,6 +149,7 @@
    * [Minimum Moves to Equal Array 2](array/minimum_moves_to_equal_array_2.md)
    * [132 Pattern](array/132_pattern.md)
    * [Search for a Range](array/search_for_a_range.md)
+   * [2 Sum](array/2sum.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
