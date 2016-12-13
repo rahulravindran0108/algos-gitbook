@@ -122,6 +122,7 @@
    * [Subset](math/subset.md)
    * [Subsets 2](math/subsets_2.md)
    * [Increasing Triplet Subsequence](math/increasing_triplet_subsequence.md)
+   * [Longest Repeating Character Replacement](math/longest_repeating_character_replacement.md)
 * [Array](array.md)
    * [Container With Most Water](array/container_with_most_water.md)
    * [Merge Two Sorted List in Constant Space](array/merge_two_sorted_list_in_constant_space.md)
