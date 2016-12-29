@@ -48,6 +48,7 @@
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)
    * [Stack using Queue](design/stack_using_queue.md)
+   * [Two Sum Datastructure](design/two_sum_datastructure.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
