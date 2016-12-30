@@ -18,6 +18,8 @@
    * [Copy List With Random Pointers](linkedlist/copy_list_with_random_pointers.md)
    * [Reverse Nodes in K Groups](linkedlist/reverse_in_k_groups.md)
    * [Linked List Random Node](linkedlist/linked_list_random_node.md)
+   * [Delete Node in Linked List](linkedlist/delete_node_in_ll.md)
+   * [Remove Linked List Elements](linkedlist/remove_ll_elements.md)
 * [String](strings.md)
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
    * [Longest Abolute File Path](string/longest_absolute_file_path.md)
