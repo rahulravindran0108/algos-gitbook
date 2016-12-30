@@ -24,3 +24,29 @@ class Solution(object):
             rev, p = p, tmp
         return rev
 ```
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode rev = null, p  = head;
+
+        while(p != null) {
+            ListNode temp = p.next;
+            p.next = rev;
+            rev = p;
+            p = temp;
+        }
+
+        return rev;
+
+    }
+}
+```
