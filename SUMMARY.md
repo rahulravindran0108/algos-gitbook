@@ -22,6 +22,7 @@
    * [Remove Linked List Elements](linkedlist/remove_ll_elements.md)
    * [Rotate List](linkedlist/rotate_list.md)
    * [Remove Duplicates from Sorted List 2](linkedlist/remove_duplicates_from_sorted_list_2.md)
+   * [Intersection of Two Linked List](linkedlist/intersection_two_linked_list.md)
 * [String](strings.md)
    * [Longest Substring Without Repeating Characters](string/longest_substring_without_repeating_character.md)
    * [Longest Abolute File Path](string/longest_absolute_file_path.md)

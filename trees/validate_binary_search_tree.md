@@ -24,6 +24,7 @@ Binary tree [1,2,3], return false.
 
 ### Solution
 
+```python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -46,3 +47,31 @@ class Solution(object):
         if root.val <= min or root.val >= max:
             return False
         return self.validateTree(root.left, min, root.val) and self.validateTree(root.right, root.val, max)
+```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public boolean isValidBST(TreeNode root) {
+        if(root == null) return true;
+        return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    public boolean helper(TreeNode root, long lb, long ub) {
+        if(root == null) return true;
+
+        if(root.val <= lb || root.val >= ub)
+            return false;
+
+        return helper(root.left, lb, root.val) && helper(root.right, root.val, ub);
+    }
+}
+```
