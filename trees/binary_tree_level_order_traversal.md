@@ -50,3 +50,39 @@ class Solution(object):
             stack = new_q
         return result
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if(root == null) return result;
+        List<TreeNode> stack = new ArrayList<>();
+        stack.add(root);
+
+        while(!stack.isEmpty()) {
+            List<TreeNode> loc = new ArrayList<>(); // local list
+            result.add(stack.stream()
+                            .map(item -> item.val)
+                            .collect(Collectors.toList()));
+
+            stack.forEach(node -> {
+               if(node.left != null) loc.add(node.left);
+               if(node.right != null) loc.add(node.right);
+            });
+
+            stack = loc;
+        }
+
+        return result;
+    }
+}
+```

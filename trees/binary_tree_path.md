@@ -48,3 +48,39 @@ class Solution:
                 self.dfs(root.right, result, tmp)
             tmp.pop()
 ```
+
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> result = new ArrayList<>();
+        if(root == null) return result;
+
+        helper(root, result, new ArrayList<String>());
+
+        return result;
+    }
+
+    public void helper(TreeNode root, List<String> result, List<String> path) {
+        path.add(Integer.toString(root.val));
+        if(root.left == null && root.right == null) {
+            result.add(String.join("->", path));
+        } else {
+            if(root.left != null)
+                helper(root.left, result, path);
+            if(root.right != null)
+                helper(root.right, result, path);
+        }
+        path.remove(path.size() - 1);
+    }
+}
+```
