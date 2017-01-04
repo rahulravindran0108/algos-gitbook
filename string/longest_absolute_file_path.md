@@ -55,3 +55,30 @@ class Solution(object):
                 pathlen[depth+1] = pathlen[depth] + 1 + len(name)
         return maxlength
 ```
+
+```java
+public class Solution {
+    public int lengthLongestPath(String input) {
+        HashMap<Integer, Integer> levels = new HashMap<>();
+        int maxLen = 0;
+
+        String [] lines = input.split("\n");
+        for(String line : lines) {
+            int level = line.lastIndexOf("\t") + 1;
+            if(line.contains(".")) {
+                if(level == 0)
+                    maxLen = line.length();
+                else
+                    maxLen = Math.max(maxLen, levels.get(level - 1) + line.length() - level);
+            } else {
+                if(level == 0)
+                    levels.put(level, line.length() + 1);
+                else
+                    levels.put(level, levels.get(level - 1) + line.length() - level + 1);
+            }
+        }
+
+        return maxLen;
+    }
+}
+```

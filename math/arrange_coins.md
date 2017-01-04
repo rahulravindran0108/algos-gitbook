@@ -41,3 +41,11 @@ class Solution(object):
         from math import sqrt
         return int((sqrt(1+8*n) - 1) / 2)
 ```
+
+```java
+public class Solution {
+    public int arrangeCoins(int n) {
+        return (int) ((-1 + Math.sqrt(1 + 8 * (long) n)) / 2);
+    }
+}
+```
