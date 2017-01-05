@@ -40,3 +40,40 @@ class Solution(object):
         return dp[0]+1
 
 ```
+
+```java
+public class Solution {
+    public int calculateMinimumHP(int[][] dungeon) {
+        int row = dungeon.length;
+        int col = dungeon[0].length;
+
+        int [][] dp = new int[row][col];
+
+        dp[row - 1][col-1]  = dungeon[row - 1][col - 1] < 0 ? 1 - dungeon[row - 1][col - 1] : 1;
+
+
+        // last column
+        for(int i = row - 2; i>=0;i--)
+            dp[i][col - 1] = compute(dungeon[i][col-1], dp[i+1][col - 1]);
+
+        // last row
+        for(int j = col - 2; j >=0; j--)
+            dp[row-1][j] = compute(dungeon[row - 1][j], dp[row-1][j + 1]);
+
+        // compute for the rest
+        for(int i = row - 2;i >=0;i--)
+            for(int j = col - 2;j>=0;j--)
+                dp[i][j] = Math.min(compute(dungeon[i][j], dp[i+1][j]), compute(dungeon[i][j], dp[i][j+1]));
+
+        return dp[0][0];
+    }
+
+    public int compute(int cur, int pre) {
+        if(cur == 0)
+            return pre;
+        if(cur > 0 && cur >= pre)
+            return 1;
+        return pre - cur;
+    }
+}
+```
