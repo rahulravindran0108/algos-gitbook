@@ -50,6 +50,7 @@
    * [Repeated DNA Sequence](string/repeated_dna_sequence.md)
    * [Shortest Palindrome](string/shortest_palindrome.md)
    * [Generate Paranthesis](string/generate_paranthesis.md)
+   * [Wildcard Matching](string/wildcard_matching.md)
 * [Design](design.md)
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)

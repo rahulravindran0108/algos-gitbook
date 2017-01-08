@@ -70,3 +70,91 @@ class Trie(object):
 # trie.insert("somestring")
 # trie.search("key")
 ```
+
+```java
+class TrieNode {
+
+    private final int R = 26;
+    private final TrieNode [] children;
+    private String item;
+
+    // Initialize your data structure here.
+    public TrieNode() {
+        children = new TrieNode[R];
+        item = "";        
+    }
+
+    public TrieNode [] getChildren() {
+        return this.children;
+    }
+
+    public String getItem() {
+        return this.item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    public void setChild(int i, TrieNode n) {
+        if(i >= 26 || i < 0) throw new IllegalArgumentException();
+        this.children[i] = n;
+    }
+
+    public TrieNode getChild(int i) {
+        if(i >= 26 || i < 0) throw new IllegalArgumentException();
+        return this.children[i];
+    }
+}
+
+public class Trie {
+    private TrieNode root;
+
+    public Trie() {
+        root = new TrieNode();
+    }
+
+    // Inserts a word into the trie.
+    public void insert(String word) {
+        TrieNode cur = root;
+
+        for(char c : word.toCharArray()) {
+            if(cur.getChild(c - 'a') == null)
+                cur.setChild(c - 'a', new TrieNode());
+            cur = cur.getChild(c - 'a');
+        }
+        cur.setItem(word);
+    }
+
+    // Returns if the word is in the trie.
+    public boolean search(String word) {
+        TrieNode cur = root;
+        for(char c : word.toCharArray()) {
+            if(cur.getChild(c - 'a') == null) return false;
+            cur = cur.getChild(c - 'a');
+        }
+
+        return cur.getItem().equals(word);
+    }
+
+    // Returns if there is any word in the trie
+    // that starts with the given prefix.
+    public boolean startsWith(String prefix) {
+        TrieNode cur = root;
+        for(char c : prefix.toCharArray()) {
+            System.out.println(c);
+            if(cur.getChild(c - 'a') == null)
+                return false;
+
+            cur = cur.getChild(c - 'a');
+        }
+
+        return true;
+    }
+}
+
+// Your Trie object will be instantiated and called as such:
+// Trie trie = new Trie();
+// trie.insert("somestring");
+// trie.search("key");
+```
