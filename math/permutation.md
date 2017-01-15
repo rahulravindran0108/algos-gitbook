@@ -42,3 +42,29 @@ class Solution(object):
                 used[i] = False
 
 ```
+
+```java
+public class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+
+        List<List<Integer>> result = new ArrayList<>();
+        dfs(result,new ArrayList<>(), nums);
+        return result;
+    }
+
+    public void dfs(List<List<Integer>> result, List<Integer> path, int [] nums) {
+        if(path.size() == nums.length) {
+            result.add(new ArrayList<>(path));
+            return;
+        } else {
+            for(int x : nums) {
+                if(!path.contains(x)) {
+                    path.add(x);
+                    dfs(result, path, nums);
+                    path.remove(path.size() - 1);
+                }
+            }
+        }
+    }
+}
+```

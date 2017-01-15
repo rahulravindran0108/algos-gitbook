@@ -39,5 +39,29 @@ class Solution(object):
             for i in xrange(len(nums)):
                 self.combine_recurse(nums[i+1:], k - 1, intermediate + [nums[i]], result)
         return
-        
+
+```
+
+```java
+public class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> result = new ArrayList<>();
+
+        dfs(result, new ArrayList<>(), 1, n, k);
+        return result;
+    }
+
+    public void dfs(List<List<Integer>> result, List<Integer> path, int start, int n, int k) {
+        if(k == 0) {
+            result.add(new ArrayList<>(path));
+            return;
+        } else {
+            for(int i = start;i<=n;i++) {
+                path.add(i);
+                dfs(result, path, i  + 1, n, k - 1);
+                path.remove(path.size() - 1);
+            }
+        }
+    }
+}
 ```
