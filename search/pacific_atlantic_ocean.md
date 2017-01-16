@@ -58,3 +58,47 @@ class Solution(object):
         return [list(x) for x in pset & aset]
 
 ```
+
+```java
+public class Solution {
+    private int [][] dirs = new int[][] {{1, 0}, {-1,0}, {0, 1}, {0, -1}};
+
+    public List<int[]> pacificAtlantic(int[][] matrix) {
+        List<int []> res = new ArrayList<>();
+
+
+        if(matrix == null || matrix.length == 0  || matrix[0].length == 0)
+            return res;
+
+        int m = matrix.length, n = matrix[0].length;
+        boolean [][] pacific = new boolean[m][n], atlantic = new boolean[m][n];
+
+        for(int i = 0;i<m;i++) {
+            dfs(pacific, matrix, i, 0, m, n, Integer.MIN_VALUE);
+            dfs(atlantic, matrix, i, n - 1, m, n, Integer.MIN_VALUE);
+        }
+
+        for(int i = 0;i<n;i++) {
+            dfs(pacific, matrix, 0, i, m, n, Integer.MIN_VALUE);
+            dfs(atlantic, matrix, m - 1, i, m, n, Integer.MIN_VALUE);
+        }
+
+        for(int i = 0;i < m;i++)
+            for(int j = 0;j<n;j++)
+                if(pacific[i][j] && atlantic[i][j])
+                    res.add(new int [] {i, j});
+        return res;
+    }
+
+    public void dfs(boolean [][] visited, int [][] matrix, int i, int j, int m, int n, int height) {
+        if(i < 0 || j < 0 || i >= m || j >=n || visited[i][j] || matrix[i][j] < height)
+            return;
+        visited[i][j] = true;
+        for(int [] dir : dirs) {
+            dfs(visited, matrix, i + dir[0], j + dir[1], m, n, matrix[i][j]);
+        }
+    }
+
+
+}
+```

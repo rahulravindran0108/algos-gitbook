@@ -28,3 +28,42 @@ class Solution(object):
             s = re.sub(r'(\d+)\[([a-z]*)\]', lambda m: int(m.group(1)) * m.group(2), s)
         return s
 ```
+
+
+```java
+public class Solution {
+    public String decodeString(String s) {
+        Stack<Integer> countStack = new Stack<>();
+        Stack<String> resStack = new Stack<>();
+        String res = "";
+
+        int idx = 0;
+        while(idx < s.length()) {
+            if(Character.isDigit(s.charAt(idx))) {
+                int count = 0;
+                while (Character.isDigit(s.charAt(idx))) {
+                    count = 10 * count + (s.charAt(idx) - '0');
+                    idx++;
+                }
+                countStack.push(count);
+            } else if(s.charAt(idx) == '[') {
+                resStack.push(res);
+                res = "";
+                idx ++;
+            } else if(s.charAt(idx) == ']') {
+                int repeat = countStack.pop();
+                StringBuilder sb = new StringBuilder(resStack.pop());
+
+                for(int i = 0;i<repeat;i++)
+                    sb.append(res);
+
+                res = sb.toString();
+                idx++;
+            } else {
+                res += s.charAt(idx++);
+            }
+        }
+        return res;
+    }
+}
+```

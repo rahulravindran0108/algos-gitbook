@@ -32,3 +32,34 @@ class Solution(object):
             return 0
         return max(self.helper(root.left), self.helper(root.right)) + 1
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public boolean isBalanced(TreeNode root) {
+        if(root == null)
+            return true;
+        return dfs(root) == -1 ? false : true;
+    }
+
+    public int dfs(TreeNode root) {
+        if(root == null)
+            return 0;
+
+        int left = dfs(root.left);
+        int right = dfs(root.right);
+
+        if(left == -1 || right == -1)
+            return -1;
+        return Math.abs(left - right) > 1 ? -1 : 1 + Math.max(left, right);
+    }
+}
+```

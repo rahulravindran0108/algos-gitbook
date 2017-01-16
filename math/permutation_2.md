@@ -46,3 +46,31 @@ public class Solution {
     }
 }
 ```
+
+```java
+public class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
+        dfs(result,new ArrayList<>(), nums, new boolean[nums.length]);
+        return result;
+    }
+
+    public void dfs(List<List<Integer>> result, List<Integer> path, int [] nums, boolean [] visited) {
+        if(path.size() == nums.length) {
+            result.add(new ArrayList<>(path));
+            return;
+        } else {
+            for(int i = 0;i<nums.length;i++) {
+                if(visited[i]) continue;
+                if(i>0 &&nums[i-1]==nums[i] && !visited[i-1]) continue;
+                path.add(nums[i]);
+                visited[i] = true;
+                dfs(result, path, nums, visited);
+                path.remove(path.size() - 1);
+                visited[i] = false;
+            }
+        }
+    }
+}
+```

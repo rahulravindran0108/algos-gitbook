@@ -48,3 +48,39 @@ class Solution(object):
             if nx >= 0 and nx < m and ny >= 0 and ny < n and grid[nx][ny] == "1" and visited[nx][ny] == 0:
                 self.dfs(grid, nx, ny, visited, m, n)
 ```
+
+```java
+public class Solution {
+
+    private int [][] dirs = new int[][] {{1,0}, {-1,0}, {0, 1}, {0,-1}};
+
+    public int numIslands(char[][] grid) {
+        if(grid == null || grid.length == 0)
+            return 0;
+
+        int m = grid.length, n = grid[0].length;
+        int count = 0;
+
+        for(int i = 0;i<m;i++)
+            for(int j = 0;j<n;j++)
+                if(grid[i][j] == '1') {
+                    count += 1;
+                    dfs(grid, i, j , m, n);
+                }
+        return count;
+    }
+
+    public void dfs(char [][] grid, int i, int j, int m, int n) {
+
+        if(i < 0 || j < 0 || i >= m || j >= n || grid[i][j] == '0')
+            return;
+
+        grid[i][j] = '0';
+
+        for(int [] dir : dirs) {
+            dfs(grid, i + dir[0], j + dir[1], m, n);
+        }
+    }
+    
+}
+```
