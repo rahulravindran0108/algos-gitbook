@@ -45,3 +45,40 @@ class Solution(object):
                 return False
         return True
 ```
+
+```java
+public class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        int [][] matrix = new int[numCourses][numCourses];
+        int [] inDegree = new int[numCourses];
+
+        for(int [] p : prerequisites) {
+            int course = p[0], pre = p[1];
+
+            if(matrix[pre][course] == 0)
+                inDegree[course] ++;
+            matrix[pre][course] = 1;
+        }
+
+        int count = 0;
+        Queue<Integer> q = new LinkedList();
+
+        for(int i = 0;i< inDegree.length;i++)
+            if(inDegree[i] == 0) q.offer(i);
+
+        while(!q.isEmpty()) {
+            int cur = q.poll();
+            count += 1;
+
+            for(int i = 0;i<numCourses;i++) {
+                if(matrix[cur][i] != 0) {
+                    if(--inDegree[i] == 0)
+                        q.offer(i);
+                }
+            }
+        }
+
+        return count == numCourses;
+    }
+}
+```
