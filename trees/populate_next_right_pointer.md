@@ -60,3 +60,30 @@ class Solution(object):
             self.connect(root.left)
             self.connect(root.right)
 ```
+
+```java
+/**
+ * Definition for binary tree with next pointer.
+ * public class TreeLinkNode {
+ *     int val;
+ *     TreeLinkNode left, right, next;
+ *     TreeLinkNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public void connect(TreeLinkNode root) {
+        TreeLinkNode cur_level = root;
+
+        while(cur_level != null) {
+            TreeLinkNode cur = cur_level;
+            while(cur != null) {
+                if(cur.left != null) cur.left.next = cur.right;
+                if(cur.right != null && cur.next != null) cur.right.next = cur.next.left;
+
+                cur = cur.next;
+            }
+            cur_level = cur_level.left;
+        }
+    }
+}
+```

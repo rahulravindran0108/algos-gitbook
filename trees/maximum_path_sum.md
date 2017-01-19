@@ -41,3 +41,34 @@ class Solution(object):
         single = max(left[1] + root.val, right[1] + root.val, 0)
         return maxpath, single
 ```
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+
+    int maxValue;
+
+    public int maxPathSum(TreeNode root) {
+        maxValue = Integer.MIN_VALUE;
+        dfs(root);
+        return maxValue;
+    }
+
+    public int dfs(TreeNode root) {
+        if(root == null) return 0;
+        int left = Math.max(0, dfs(root.left));
+        int right = Math.max(0, dfs(root.right));
+        maxValue = Math.max(maxValue, left + right + root.val);
+
+        return Math.max(left, right) + root.val;
+    }
+}
+```
