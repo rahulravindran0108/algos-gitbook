@@ -230,6 +230,7 @@
    * [Word Break](dp/word_break.md)
    * [Unique Substring in Wraparound](dp/unique_substring_in_wraparound.md)
    * [Combination Sum 4](dp/combination_sum_4.md)
+   * [Regular Expression Matching](dp/regular_expression_matching.md)
 * [Binary Search](search.md)
    * [Search in a Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Surrounded Regions](search/surrounded_regions.md)

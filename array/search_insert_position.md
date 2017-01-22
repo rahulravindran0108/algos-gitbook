@@ -34,3 +34,27 @@ class Solution(object):
         return l + 1 if target > nums[l] else l
 
 ```
+
+```java
+public class Solution {
+    public int searchInsert(int[] nums, int target) {
+
+
+
+        int l = 0, r = nums.length - 1;
+
+        while(l < r) {
+            int mid = (l + r) / 2;
+
+            if(nums[mid] == target)
+                return mid;
+            else if(nums[mid] > target)
+                r = mid;
+            else
+                l = mid + 1;
+        }
+
+        return target > nums[l] ? l + 1 : l;
+    }
+}
+```
