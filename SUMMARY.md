@@ -240,6 +240,8 @@
    * [Reconstruct Itenary](search/reconstruct_itenary.md)
    * [Two Sum Sorted](search/two_sum_sorted.md)
    * [Word Break 2](search/word_break_2.md)
+   * [Find Minimum in Rotated Sorted Array 2](search/find_minimum_in_rotated_sorted_array_2.md)
+   * [Find Minimum in Rotated Sorted Array](search/find_minimum_in_rotated_sorted_array.md)
 * [Stack](stack.md)
    * [Valid Paranthesis](stack/valid_paranthesis.md)
    * [Simplify Path](stack/simplify_path.m)
