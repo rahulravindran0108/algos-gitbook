@@ -52,6 +52,8 @@
    * [Generate Paranthesis](string/generate_paranthesis.md)
    * [Wildcard Matching](string/wildcard_matching.md)
    * [Repeated Substring Pattern](string/repeated_substring_pattern.md)
+   * [Number of Segments in String](string/number_of_segments_in_string.md)
+   * [Reverse String](string/reverse_string.md)
 * [Design](design.md)
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)
