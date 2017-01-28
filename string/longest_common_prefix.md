@@ -20,5 +20,28 @@ class Solution(object):
                 if i >= len(j) or base_str[i] != j[i]:
                     return base_str[:i]
         return base_str
+```
 
+```java
+public class Solution {
+    public String longestCommonPrefix(String[] strs) {
+
+        if(strs == null || strs.length == 0)
+            return "";
+
+        StringBuilder sb = new StringBuilder();
+        String base = strs[0];
+
+        for(int i = 0;i < base.length();i++) {
+            char c = base.charAt(i);
+
+            for(String s : strs) {
+                if(s.length() < i + 1 || c != s.charAt(i)) return sb.toString();
+            }
+            sb.append(c);
+        }
+
+        return sb.toString();
+    }
+}
 ```

@@ -23,13 +23,41 @@ class Solution(object):
         dict = {}
         for i in range(len(s)):
             dict[s[i]] = -1
-        
+
         for i in range(len(s)):
             if dict[s[i]] != -1:
                 while start <= dict[s[i]]:
                     dict[start] = -1
                     start+=1
-            if i - start + 1 > maxlen: maxlen = i - start + 1 
+            if i - start + 1 > maxlen: maxlen = i - start + 1
             dict[s[i]] = i
         return maxlen
+```
+
+```java
+public class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        int maxLength = 0;
+        int start = 0;
+
+        for(int i = 0;i<s.length();i++) {
+            if(map.containsKey(s.charAt(i))) {
+                maxLength = Math.max(maxLength, i - start);
+                int j = map.get(s.charAt(i));
+                while(start <= j) {
+                    map.remove(s.charAt(start));
+                    start ++;
+                }
+
+            }
+
+            map.put(s.charAt(i), i);
+        }
+
+        maxLength = Math.max(maxLength, s.length() - start);
+
+        return maxLength;
+    }
+}
 ```
