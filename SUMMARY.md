@@ -55,6 +55,7 @@
    * [Number of Segments in String](string/number_of_segments_in_string.md)
    * [Reverse String](string/reverse_string.md)
    * [Remove Invalid Paranthesis](string/remove_invalid_paranthesis.md)
+   * [Count and Say](string/count_and_say.md)
 * [Design](design.md)
    * [Min Stack](design/min_stack.md)
    * [Queue using Stack](design/queue_using_stack.md)

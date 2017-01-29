@@ -24,3 +24,17 @@ class Solution(object):
         return len(s.strip().split(' ')[-1])
 
 ```
+
+```java
+public class Solution {
+    public int lengthOfLastWord(String s) {
+
+        if(s == null || s.length() == 0)
+            return 0;
+
+        String [] words = s.split("\\s+");
+
+        return words.length == 0 ? 0 : words[words.length -1].length();
+    }
+}
+```

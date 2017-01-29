@@ -25,29 +25,30 @@ Output: "bb"
 ```java
 public class Solution {
     public String longestPalindrome(String s) {
-        int start = 0, end = 0;
+        String res = "";
+        int currentLength = 0;
 
-        for(int i = 0; i < s.length();i++) {
-            int len1 = expandAroundCenter(s, i, i);
-            int len2 = expandAroundCenter(s, i, i + 1);
-            int len = Math.max(len1, len2);
-            if(len > end - start) {
-                start = i - (len - 1) / 2;
-                end = i + (len/2);
+        for(int i = 0;i<s.length();i++) {
+            if(isPalindrome(s, i - currentLength - 1, i)) {
+                res = s.substring(i - currentLength - 1, i + 1);
+                currentLength  += 2;
+            } else if(isPalindrome(s, i - currentLength, i)) {
+                res = s.substring(i - currentLength, i + 1);
+                currentLength  += 1;
             }
         }
 
-        return s.substring(start, end + 1);
+        return res;
     }
 
-    public int expandAroundCenter(String s, int left, int right) {
-        int L = left, R = right;
+    public boolean isPalindrome(String s, int begin, int end) {
+        if(begin < 0 ) return false;
 
-        while(L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
-            L--;
-            R++;
+        while(begin < end) {
+            if(s.charAt(begin++) != s.charAt(end--)) return false;
         }
-        return R - L - 1;
+
+        return true;
     }
 }
 ```

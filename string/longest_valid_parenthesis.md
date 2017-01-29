@@ -32,3 +32,27 @@ class Solution(object):
                     max_length = r - left[r] + 1
         return max_length
 ```
+
+```java
+public class Solution {
+    public int longestValidParentheses(String s) {
+        Stack<Integer> stack = new Stack<>();
+        int left = -1, max = 0;
+
+        for(int i = 0;i<s.length();i++) {
+            if(s.charAt(i) == '(')
+                stack.push(i);
+            else {
+                if(stack.isEmpty()) left = i;
+                else {
+                    stack.pop();
+                    if(stack.isEmpty()) max = Math.max(max, i - left);
+                    else max = Math.max(max, i - stack.peek());
+                }
+            }
+        }
+
+        return max;
+    }
+}
+```

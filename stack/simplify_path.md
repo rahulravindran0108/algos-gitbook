@@ -28,5 +28,24 @@ class Solution(object):
             else:
                 result.append(_)
         return "/" + "/".join(result)
+```
 
+```java
+public class Solution {
+    public String simplifyPath(String path) {
+        Deque<String> dq = new LinkedList<>();
+        Set<String> skip = new HashSet<>(Arrays.asList("..",".",""));
+
+        for(String dir : path.split("/")) {
+            if(dir.equals("..") && !dq.isEmpty()) dq.pop();
+            else if(!skip.contains(dir)) dq.push(dir);
+        }
+        String res = "";
+
+        for(String dir : dq)
+            res = "/" + dir + res;
+
+        return res.isEmpty() ? "/" : res;
+    }
+}
 ```
