@@ -42,5 +42,41 @@ class Solution(object):
             if j == n_word:
                 result.append(i)
         return result
+```
 
+```java
+public class Solution {
+    public List<Integer> findSubstring(String s, String[] words) {
+        List<Integer> res = new ArrayList<>();
+
+        if(s == null || words == null || words.length == 0) return res;
+        int len = words[0].length();
+
+        Map<String, Integer> map = new HashMap<>();
+        for(String word : words)
+            map.put(word, map.containsKey(word) ? map.get(word) + 1 : 1);
+
+        for(int i = 0;i <= s.length() - len * words.length;i++) {
+            Map<String, Integer> copy = new HashMap<>(map);
+
+            for(int j = 0;j<words.length;j++) {
+                String cur = s.substring(i + j * len, i + j* len + len);
+
+                if(copy.containsKey(cur)) {
+                    int count = copy.get(cur);
+
+                    if(count == 1) copy.remove(cur);
+                    else copy.put(cur, count - 1);
+
+                    if(copy.isEmpty()) {
+                        res.add(i);
+                        break;
+                    }
+                } else break;
+            }
+        }
+
+        return res;
+    }
+}
 ```
