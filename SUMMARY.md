@@ -62,6 +62,8 @@
    * [Queue using Stack](design/queue_using_stack.md)
    * [Stack using Queue](design/stack_using_queue.md)
    * [Two Sum Datastructure](design/two_sum_datastructure.md)
+   * [Design Twitter](design/twitter.md)
+   * [Design Peeking Iterator](design/peeking_iterator.md)
 * [Math](math.md)
    * [Palindrome Number](string/palindrome_number.md)
    * [Lexicographical Numbers](math/lexicographical_number.md)
