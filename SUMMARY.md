@@ -174,6 +174,7 @@
    * [Range Sum Query](array/range_sum_query.md)
    * [Arithmetic Slices](array/arithmetic_slices.md)
    * [Remove Element](array/remove_element.md)
+   * [Relative Ranks](array/relative_ranks.md)
 * [Trees](trees.md)
   * [Preorder Traversal](trees/preorder_traversal.md)
   * [Postorder Traversal](trees/postorder_traversal.md)
